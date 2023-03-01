@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tourism/login_screen.dart';
 
 
 class secondScreen extends StatefulWidget {
@@ -155,7 +156,7 @@ class _secondScreenState extends State<secondScreen> {
                           onTap: () {
                             Navigator.push(context,
                                 MaterialPageRoute(
-                                    builder: (context) => secondScreen()));
+                                    builder: (context) => LoginScreen()));
                           },
                           child: Container(
                             decoration: BoxDecoration(
@@ -177,58 +178,59 @@ class _secondScreenState extends State<secondScreen> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 2),
-                        const Center(
-                          child: Text(
-                            '- Or Sign In with -',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 20),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            GestureDetector(
-                              onTap: () {
-                                Navigator.push(context,
-                                    MaterialPageRoute(
-                                        builder: (context) => secondScreen()));
-                              },
-                              child: Container(
-                                width: 60,
-                                height: 60,
-                                padding: const EdgeInsets.all(5),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(15),
-                                  color: Colors.white38,
-                                ),
-                                child: Image.asset('assets/gog.png'),
-                              ),
-                            ),
-                            const SizedBox(width: 50),
-                            GestureDetector(
-                              onTap: () {
-                                Navigator.push(context,
-                                    MaterialPageRoute(
-                                        builder: (context) => secondScreen()));
-                              },
-                              child: Container(
-                                width: 60,
-                                height: 60,
-                                padding: const EdgeInsets.all(5),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(15),
-                                  color: Colors.white38,
-                                ),
-                                child: Image.asset('assets/fb.png'),
-                              ),
-                            ),
-                          ],
-                        )
+                        // const SizedBox(height: 2),
+                        // const Center(
+                        //   child: Text(
+                        //     '- Or Already have a account? -',
+                        //     style: TextStyle(
+                        //       color: Colors.black,
+                        //       fontSize: 20,
+                        //       fontWeight: FontWeight.w500,
+                        //
+                        //     ),
+                        //   ),
+                        // ),
+                        // const SizedBox(height: 20),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.center,
+                        //   children: [
+                        //     GestureDetector(
+                        //       onTap: () {
+                        //         Navigator.push(context,
+                        //             MaterialPageRoute(
+                        //                 builder: (context) => secondScreen()));
+                        //       },
+                        //       child: Container(
+                        //         width: 60,
+                        //         height: 60,
+                        //         padding: const EdgeInsets.all(5),
+                        //         decoration: BoxDecoration(
+                        //           borderRadius: BorderRadius.circular(15),
+                        //           color: Colors.white38,
+                        //         ),
+                        //         child: Image.asset('assets/gog.png'),
+                        //       ),
+                        //     ),
+                        //     const SizedBox(width: 50),
+                        //     GestureDetector(
+                        //       onTap: () {
+                        //         Navigator.push(context,
+                        //             MaterialPageRoute(
+                        //                 builder: (context) => secondScreen()));
+                        //       },
+                        //       child: Container(
+                        //         width: 60,
+                        //         height: 60,
+                        //         padding: const EdgeInsets.all(5),
+                        //         decoration: BoxDecoration(
+                        //           borderRadius: BorderRadius.circular(15),
+                        //           color: Colors.white38,
+                        //         ),
+                        //         child: Image.asset('assets/fb.png'),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // )
                       ],
                     ),
                   ),

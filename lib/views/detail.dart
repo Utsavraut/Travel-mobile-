@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:tourism/utils/style/style.dart';
+
+import '../book.dart';
 
 // ignore: must_be_immutable
 class DetailPage extends StatelessWidget {
@@ -82,7 +86,7 @@ class BottomSheetWidget extends StatelessWidget {
               ),
               const Spacer(),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: ()  => Get.to( BookingForm()),
                 style: ElevatedButton.styleFrom(
                   primary: primaryColor,
                   minimumSize: const Size.fromHeight(50), // NEW

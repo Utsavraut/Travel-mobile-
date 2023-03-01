@@ -66,7 +66,7 @@ class _NavigationPageState extends State<NavigationPage> {
                 child: CircleAvatar(
                   backgroundColor: primaryColor,
                   backgroundImage:
-                      const AssetImage("assets/Disneyland Paris.jpg"),
+                      const AssetImage("assets/man.jpg"),
                 ),
               )
             ],

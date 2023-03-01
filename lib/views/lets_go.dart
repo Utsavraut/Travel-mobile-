@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tourism/login_screen.dart';
+import 'package:tourism/secondscreen.dart';
 import 'package:tourism/utils/style/style.dart';
 import 'package:tourism/views/navigation.dart';
 
@@ -51,7 +52,7 @@ class BodyWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 50),
             child: SizedBox(
-              width: 130,
+              width: 100,
               child: ElevatedButton(
                   style: ButtonStyle(
                       padding: MaterialStateProperty.all<EdgeInsets>(
@@ -63,7 +64,7 @@ class BodyWidget extends StatelessWidget {
                         borderRadius:
                             BorderRadius.circular(containerRoundCorner),
                       ))),
-                  onPressed: () => Get.to(const LoginScreen()),
+                  onPressed: () => Get.to(const secondScreen()),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
@@ -92,7 +93,7 @@ class ImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: height * .6,
+      height: 300,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(containerRoundCorner),
